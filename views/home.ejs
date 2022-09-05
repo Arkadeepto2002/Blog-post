@@ -3,6 +3,8 @@
 <p><%= homeContent %> </p>
 <% for( let i = 0; i < bloglist.length; i++ ) { %>
     <h3><%= bloglist[i].title  %> </h3>
-    <p><%= bloglist[i].content %> </p>
+    <p><%= bloglist[i].content.substring(0,100)+" ..." %> 
+    <a href="/posts/<%=bloglist[i].title%>/">Read More</a>
+    </p>
 <% } %>
 <%- include("partials/footer"); %> 

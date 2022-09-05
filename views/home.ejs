@@ -1,0 +1,8 @@
+<%- include("partials/header"); %> 
+<h1>Home</h1>
+<p><%= homeContent %> </p>
+<% for( let i = 0; i < bloglist.length; i++ ) { %>
+    <h3><%= bloglist[i].title  %> </h3>
+    <p><%= bloglist[i].content %> </p>
+<% } %>
+<%- include("partials/footer"); %> 
